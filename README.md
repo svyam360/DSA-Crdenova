@@ -11,36 +11,36 @@ Enterprise-grade DSA (Direct Selling Agent) Loan Management Platform
 
 ## Project Structure
 
-
+```
 src/
 ├── features/          # Feature modules
-├── shared/           # Shared components
-├── services/         # API services
-├── config/           # Configuration
-├── constants/        # Constants
-├── types/            # TypeScript types
-└── routes/           # Routing
-
+├── shared/            # Shared components
+├── services/          # API services
+├── config/            # Configuration
+├── constants/         # Constants
+├── types/             # TypeScript types
+└── routes/            # Routing
+```
 
 ## Getting Started
 
 ### Installation
 
-bash
+```bash
 npm install
-
+```
 
 ### Development
 
-bash
+```bash
 npm run dev
-
+```
 
 ### Build
 
-bash
+```bash
 npm run build
-
+```
 
 ## Features
 
@@ -65,9 +65,3 @@ npm run build
 ## License
 
 Proprietary
-
-
-cd "/Users/jay/Desktop/Dsa Lending Software/dsa-lending-software/backend/dsa-lending-backend"
-docker compose up -d
-mvn spring-boot:run
-
