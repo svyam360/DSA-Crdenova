@@ -1,0 +1,136 @@
+.phase-page {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.phase-header h1 {
+  margin: 0;
+  font-size: 28px;
+  color: var(--text-primary);
+}
+
+.phase-header p {
+  margin: 6px 0 0;
+  color: var(--text-tertiary);
+}
+
+.phase-actions {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.phase-panel {
+  background: var(--surface-primary);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 14px;
+}
+
+.phase-grid-2 {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.phase-grid-4 {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.phase-stat {
+  background: var(--surface-primary);
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+  padding: 12px;
+}
+
+.phase-stat-label {
+  display: block;
+  font-size: 12px;
+  color: var(--text-tertiary);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.phase-stat-value {
+  display: block;
+  font-size: 24px;
+  color: var(--text-primary);
+  margin-top: 4px;
+  font-weight: 700;
+}
+
+.phase-form-actions {
+  margin-top: 12px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.phase-doc-link {
+  color: var(--accent-primary);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.phase-doc-link:hover {
+  text-decoration: underline;
+}
+
+.phase-upload-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  min-width: 240px;
+}
+
+.phase-file-input {
+  width: 100%;
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+  background: var(--surface-primary);
+  color: var(--text-primary);
+  font-size: 13px;
+  padding: 8px;
+}
+
+.phase-file-input::file-selector-button {
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 6px 10px;
+  margin-right: 10px;
+  font-size: 12px;
+  color: var(--text-primary);
+  background: var(--surface-hover);
+  cursor: pointer;
+}
+
+.phase-file-name {
+  font-size: 12px;
+  color: var(--text-tertiary);
+}
+
+.phase-checkbox-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  color: var(--text-secondary);
+  user-select: none;
+}
+
+.phase-checkbox-input {
+  width: 16px;
+  height: 16px;
+  accent-color: var(--accent-primary);
+}
+
+@media (max-width: 900px) {
+  .phase-grid-2,
+  .phase-grid-4 {
+    grid-template-columns: 1fr;
+  }
+}

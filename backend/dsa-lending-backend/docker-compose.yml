@@ -1,0 +1,35 @@
+services:
+  postgres:
+    image: postgres:16
+    container_name: dsa-postgres
+    environment:
+      POSTGRES_DB: dsa_lending
+      POSTGRES_USER: dsa_user
+      POSTGRES_PASSWORD: dsa_pass
+    ports:
+      - "5432:5432"
+    volumes:
+      - dsa_pg_data:/var/lib/postgresql/data
+
+  redis:
+    image: redis:7
+    container_name: dsa-redis
+    ports:
+      - "6379:6379"
+    volumes:
+      - dsa_redis_data:/data
+
+  pgadmin:
+    image: dpage/pgadmin4:latest
+    container_name: dsa-pgadmin
+    environment:
+      PGADMIN_DEFAULT_EMAIL: admin@dsa.com
+      PGADMIN_DEFAULT_PASSWORD: admin123
+    ports:
+      - "5050:80"
+    depends_on:
+      - postgres
+
+volumes:
+  dsa_pg_data:
+  dsa_redis_data:

@@ -1,0 +1,21 @@
+.theme-toggle {
+  width: 38px;
+  height: 38px;
+  border-radius: 10px;
+  background: var(--surface-secondary);
+  border: 1px solid var(--border-color);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+}
+
+.theme-toggle:hover {
+  background: var(--surface-hover);
+  transform: scale(1.05);
+}
+
+.theme-icon {
+  font-size: 18px;
+}
